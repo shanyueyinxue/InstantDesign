@@ -1,0 +1,74 @@
+{
+    "leaferEditorPlugins": {
+        "copy": "Copy",
+        "cut": "Cut",
+        "paste": "Paste",
+        "pasteToCurrentPosition": "Paste to Current Position",
+        "selectAll": "Select All",
+        "delete": "Delete",
+        "toTop": "To Top",
+        "toBottom": "To Bottom",
+        "exportPng": "Export as PNG",
+        "remove": "Remove",
+        "group": "Group",
+        "ungroup": "Ungroup",
+
+        "zoom": {
+            "management": "Zoom Management",
+            "out": "Zoom Out",
+            "in": "Zoom In",
+            "fit": "Fit to Canvas",
+            "oneHundred": "Zoom 100%"
+        },
+
+        "grid": {
+            "showOrHide": "Show/Hide Guidelines"
+        },
+
+        "zIndex": {
+            "adjustment": "Z-Index Adjustment",
+            "up": "Bring Forward",
+            "down": "Send Backward",
+            "top": "Bring to Front",
+            "bottom": "Send to Back"
+        },
+
+        "add": {
+            "title": "Add",
+            "image": "Add Image",
+            "text": "Add Text",
+            "rect": {
+                "title": "Rectangle",
+                "rect": "Rectangle",
+                "round": "Rounded Rectangle"
+            },
+            "polygon": {
+                "title": "Polygon",
+                "triangle": "Triangle",
+                "pentagon": "Pentagon",
+                "roundedPentagon": "Rounded Hexagon"
+            },
+            "star": {
+                "title": "Star",
+                "threeStar": "Three-Pointed Star",
+                "pentagram": "Pentagram",
+                "roundedStar": "Rounded Star"
+            },
+            "ellipse": {
+                "title": "Ellipse",
+                "circle": "Circle",
+                "ring": "Ring",
+                "sector": "Sector",
+                "ellipse": "Ellipse"
+            }
+        },
+
+        "operate": {
+            "title": "Operate",
+            "fitToCanvas": "Fit to Canvas",
+            "lock": "Lock",
+            "unlock": "Unlock",
+            "rename": "Rename"
+        }
+    }
+}

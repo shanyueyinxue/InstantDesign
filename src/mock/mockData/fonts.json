@@ -1,0 +1,126 @@
+{
+  "list": [
+    {
+      "id": 87,
+      "code": "opposans",
+      "name": "OPPO Sans 字体",
+      "variants": [
+        {
+          "url": "./fonts/OPPO Sans 字体/OPPOSans-R.ttf",
+          "weight": "400",
+          "format": "ttf"
+        },
+        {
+          "url": "./fonts/OPPO Sans 字体/OPPOSans-B.ttf",
+          "weight": "700",
+          "format": "ttf"
+        },
+        {
+          "url": "./fonts/OPPO Sans 字体/OPPOSans-H.ttf",
+          "weight": "900",
+          "format": "ttf"
+        },
+        {
+          "url": "./fonts/OPPO Sans 字体/OPPOSans-L.ttf",
+          "weight": "500",
+          "format": "ttf"
+        },
+        {
+          "url": "./fonts/OPPO Sans 字体/OPPOSans-M.ttf",
+          "weight": "600",
+          "format": "ttf"
+        }
+      ],
+      "license": "商免"
+    },
+    {
+      "id": 37,
+      "code": "soukoumincho",
+      "name": "装甲明朝",
+      "variants": [
+        {
+          "url": "./fonts/装甲明朝/装甲明朝体.ttf",
+          "format": "ttf"
+        }
+      ],
+      "license": "OFL-1.1"
+    },
+    {
+      "id": 27,
+      "code": "xianerti",
+      "name": "贤二体",
+      "variants": [
+        {
+          "url": "./fonts/贤二体/贤二体.ttf",
+          "format": "ttf"
+        }
+      ],
+      "license": "商免"
+    },
+    {
+      "id": 25,
+      "code": "wencangshufang",
+      "name": "问藏书房",
+      "preview": "./fonts/问藏书房/wencangshufang.svg",
+      "variants": [
+        {
+          "url": "./fonts/问藏书房/问藏书房.ttf",
+          "format": "ttf"
+        }
+      ],
+      "license": "商免"
+    },
+    {
+      "id": 1,
+      "code": "BaoTuXiaoBaiTi",
+      "name": "包图小白体",
+      "preview": "./fonts/包图小白体/BaoTuXiaoBaiTi.svg",
+      "variants": [
+        {
+          "url": "./fonts/包图小白体/包图小白体.ttf",
+          "format": "ttf"
+        }
+      ],
+      "license": "商免"
+    },
+    {
+      "id": 2,
+      "code": "QianTuXiaoTuTi",
+      "name": "千图小兔体",
+      "preview": "./fonts/千图小兔体/QianTuXiaoTuTi.svg",
+      "variants": [
+        {
+          "url": "./fonts/千图小兔体/千图小兔体.ttf",
+          "format": "ttf"
+        }
+      ],
+      "license": "商免"
+    },
+    {
+      "id": 4,
+      "code": "MuYaoRuanBiShouXieTi",
+      "name": "沐瑶软笔手写体",
+      "preview": "./fonts/沐瑶软笔手写体/MuYaoRuanBiShouXieTi.svg",
+      "variants": [
+        {
+          "url": "./fonts/沐瑶软笔手写体/沐瑶软笔手写体.ttf",
+          "format": "ttf"
+        }
+      ],
+      "license": "商免"
+    },
+    {
+      "id": 5,
+      "code": "YanShiChunFengKai",
+      "name": "演示春风楷",
+      "preview": "./fonts/演示春风楷/YanShiChunFengKai.svg",
+      "variants": [
+        {
+          "url": "./fonts/演示春风楷/演示春风楷.ttf",
+          "format": "ttf"
+        }
+      ],
+      "license": "商免"
+    }
+  ]
+}

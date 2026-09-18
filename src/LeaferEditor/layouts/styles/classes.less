@@ -1,0 +1,40 @@
+#leafer-editor-layout {
+    overflow: hidden;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.no-seletion {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--color-border);
+    border-radius: 2px 2px 0 0;
+}
+
+
+
+:deep(.arco-input-wrapper .arco-input-prefix) {
+    padding-right: 5px;
+}
+
+:deep(.arco-input-wrapper),
+:deep(.arco-checkbox),
+:deep(.arco-select-view-single),
+:deep(.arco-select-view-value),
+:deep(.arco-input.arco-input-size-medium),
+:deep(.arco-input-size-small) {
+    font-size: 12px !important;
+}
+
+.arco-select-view-single.arco-select-view-size-small .arco-select-view-value {
+    min-height: 24px;
+}

@@ -1,0 +1,626 @@
+{
+  "list": [
+    {
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    },{
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    },{
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    },{
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    },{
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    },{
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    },{
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    },{
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    },{
+      "title": "加载此面板可获得右键菜单“保存为素材”",
+      "category": "default",
+      "json": {
+        "tag": "Group",
+        "name": "加载此面板可获得右键菜单“保存为素材”",
+        "zIndex": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "skewX": 0,
+        "skewY": 0,
+        "editable": true,
+        "hitChildren": false,
+        "data": {},
+        "states": {},
+        "children": [
+          {
+            "tag": "Rect",
+            "name": "Rect 1",
+            "zIndex": 1,
+            "x": -1.4210854715202004e-14,
+            "y": 3.410605131648481e-13,
+            "width": 752.9411764705882,
+            "height": 100,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "fill": [
+              {
+                "type": "solid",
+                "color": "#FF0000"
+              }
+            ],
+            "stroke": "#32cd79",
+            "strokeWidth": 5,
+            "data": {},
+            "states": {}
+          },
+          {
+            "tag": "Text",
+            "resizeFontSize": true,
+            "fill": "#32cd79",
+            "text": "加载此面板可获得右键菜单“保存为素材”",
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "lineHeight": {
+              "type": "percent",
+              "value": 1.5
+            },
+            "name": "加载此面板可获得右键菜单“保存为素材”",
+            "zIndex": 2,
+            "x": 74.61316636029407,
+            "y": 23.00000000000034,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "skewX": 0,
+            "skewY": 0,
+            "editable": true,
+            "data": {},
+            "states": {}
+          }
+        ]
+      },
+      "url": "./imgs/1.png"
+    }
+  ]
+}

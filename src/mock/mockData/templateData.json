@@ -1,0 +1,499 @@
+{
+  "list": [
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover": "./temps/1.jpg",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/1.jpg",
+                "id": "019d5696-d9a6-770a-b3d3-a8a8e70e5476245b994",
+                "name": "1",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    },
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover": "./temps/2.png",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/2.png",
+                "id": "019d5696-d9a6-770a-b3d3-a8a8e70e5476245b994",
+                "name": "2",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    },
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover": "./temps/3.png",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/3.png",
+                "id": "019d5696-d9a6-770a-b3d3-a8a8e70e5476245b994",
+                "name": "3",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    },
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover": "./temps/4.png",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/4.png",
+                "id": "019d5696-d9a6-770a-b3d3-a8a8e70e5476245b994",
+                "name": "4",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    },
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover": "./temps/5.png",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/5.png",
+                "id": "019d5696-d9a6-770a-b3d3-a8a8e70e5476245b994",
+                "name": "5",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    },
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover": "./temps/6.png",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/6.png",
+                "id": "019d6696-d9a6-770a-b3d3-a8a8e70e6476246b994",
+                "name": "6",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    },
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover":"./temps/7.png",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/7.png",
+                "id": "019d5696-d9a6-770a-b3d3-a8a8e70e5476245b994",
+                "name": "7",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    },
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover": "./temps/8.png",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/8.png",
+                "id": "019d5696-d9a6-770a-b3d3-a8a8e70e5476245b994",
+                "name": "8",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    },
+    {
+      "width": 1000,
+      "height": 1000,
+      "pages": {
+        "DefaultCanvas": {
+          "metaData": {
+            "cover": "./temps/9.jpg",
+            "title": "国庆节节日祝福喜庆竖版海报"
+          },
+          "name": "DefaultCanvas",
+          "width": 1535,
+          "height": 2732,
+          "x": 0,
+          "y": 0,
+          "contentFrame": {
+            "tag": "Frame",
+            "fill": [
+              {
+                "type": "solid",
+                "color": "Transparent"
+              }
+            ],
+            "width": 1535,
+            "height": 2732,
+            "id": "019d5696-99e0-75cd-8240-df5334c4f9e07b06523",
+            "name": "DefaultCanvas",
+            "blendMode": "normal",
+            "x": 0,
+            "y": 0,
+            "draggable": false,
+            "hittable": true,
+            "data": {},
+            "states": {},
+            "children": [
+              {
+                "tag": "Image",
+                "url": "./temps/9.jpg",
+                "id": "019d5696-d9a6-770a-b3d3-a8a8e70e5476245b994",
+                "name": "9",
+                "zIndex": 1,
+                "x": -5.684341886080802e-14,
+                "y": -7.105427357601002e-15,
+                "width": 1535,
+                "height": 2732,
+                "editable": true,
+                "placeholderColor": "rgba(120,120,120,0.4)",
+                "data": {},
+                "states": {}
+              }
+            ]
+          }
+        }
+      },
+      "currentCanvas": "DefaultCanvas"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+    "leaferEditorPlugins": {
+        "copy": "复制",
+        "cut": "剪切",
+        "paste": "粘贴",
+        "pasteToCurrentPosition": "粘贴到当前位置",
+        "selectAll": "全选",
+        "delete": "删除",
+        "toTop": "置顶",
+        "toBottom": "置底",
+        "exportPng": "导出PNG",
+        "remove": "移除",
+        "group": "编组",
+        "ungroup": "取消编组",
+
+        "zoom": {
+            "management": "缩放管理",
+            "out": "缩小",
+            "in": "放大",
+            "fit": "适应画布",
+            "oneHundred": "缩放 100%"
+        },
+
+        "grid": {
+            "showOrHide": "显示/隐藏网格线"
+        },
+
+        "zIndex": {
+            "adjustment": "层级调整",
+            "up": "向上调整一层",
+            "down": "向下调整一层",
+            "top": "置顶",
+            "bottom": "置底"
+        },
+
+        "add": {
+            "title": "添加",
+            "image": "添加图片",
+            "text": "添加文字",
+            "rect": {
+                "title": "矩形",
+                "rect": "矩形",
+                "round": "圆角矩形"
+            },
+            "polygon": {
+                "title": "多边形",
+                "triangle": "三角形",
+                "pentagon": "五边形",
+                "roundedPentagon": "圆角六边形"
+            },
+            "star": {
+                "title": "星形",
+                "threeStar": "三棱锥星",
+                "pentagram": "五角星",
+                "roundedStar": "圆角星形"
+            },
+            "ellipse": {
+                "title": "圆形",
+                "circle": "圆形",
+                "ring": "圆环",
+                "sector": "扇形",
+                "ellipse": "椭圆"
+            }
+        },
+
+        "operate": {
+            "title": "操作",
+            "fitToCanvas": "缩放到画布大小",
+            "lock": "锁定",
+            "unlock": "解锁",
+            "rename": "重命名"
+        }
+    }
+}

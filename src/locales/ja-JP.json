@@ -1,0 +1,721 @@
+{
+  "sloganName": "即時デザイン",
+  "greeting": "こんにちは、アプリへようこそ！",
+  "leaferEditorLayouts": {
+    "common": {
+      "confirm": "確認",
+      "cancel": "キャンセル",
+      "renameSuccess": "名前変更成功"
+    },
+    "footer": {
+      "addPage": "ページ追加",
+      "contextMenu": {
+        "copy": "コピー",
+        "clear": "クリア",
+        "delete": "削除",
+        "rename": "名前変更",
+        "renameInputInfo": "新しい名前を入力してください"
+      },
+      "page": {
+        "defaultName": "ページ {index}"
+      },
+      "copyright": "© 2021 即時デザイン All rights reserved.",
+      "cdn": "本サイトは即時デザインのCDN/クラウドストレージにより提供されています",
+      "icp": "ICP備案番号：京ICP備 19003558号-1"
+    },
+    "header": {
+      "copy": {
+        "copy": "コピー",
+        "all": "すべて",
+        "copying": "コピー中..."
+      },
+      "filePopover": {
+        "file": "ファイル",
+        "insertImage": "画像挿入",
+        "importPSD": "PSD読み込み",
+        "importJSON": "JSON読み込み",
+        "appendJSON": "JSON読み込み（追加）",
+        "close": "閉じる",
+        "process": {
+          "importing": "読み込み中",
+          "parsing": "解析中",
+          "converting": "読み込み完了",
+          "info-importing": "解析中",
+          "info-parsing": "読み込み済み"
+        }
+      },
+      "gridlines": {
+        "clear": "グリッド線をクリア",
+        "showOrHide": "グリッド線の表示/非表示"
+      },
+      "snap": {
+        "help": "グリッド線を表示/非表示"
+      },
+      "help": {
+        "shortcuts": "ショートカット",
+        "about": "説明",
+        "about-text": "ホットキーとその機能は現在すべて対応しているわけではなく、今後順次改善予定です...",
+        "datas": {
+          "common": "一般",
+          "copy": "コピー",
+          "cut": "切り取り",
+          "paste": "貼り付け",
+          "allSelect": "すべて選択",
+          "undo": "元に戻す",
+          "redo": "やり直す",
+          "delete": "削除",
+          "escape": "閉じる/キャンセル",
+          "canvas": "キャンバス操作",
+          "moveCanvas": "キャンバス移動",
+          "moveCanvasInfo": "Space + ドラッグ / 中ボタンドラッグ",
+          "zoomCanvas": "キャンバス拡大縮小",
+          "zoomCanvasInfo": "Ctrl + スクロール / 中ボタンスクロール",
+          "item": "要素操作",
+          "select": "複数選択",
+          "selectInfo": "Shiftを押しながらクリック",
+          "moveDown": "1レイヤー下へ",
+          "moveUp": "1レイヤー上へ",
+          "moveToBottom": "最背面へ",
+          "moveToTop": "最前面へ",
+          "group": "グループ化（複数選択時）",
+          "ungroup": "グループ解除（グループ選択時）",
+          "lock-unlock": "ロック/ロック解除",
+          "horizontalFlip": "左右反転",
+          "verticalFlip": "上下反転",
+          "move": "要素移動",
+          "rotate": "要素回転",
+          "gridlines": "ルーラーライン操作",
+          "showOrHide": "表示/非表示",
+          "zoom": "キャンバス拡大縮小",
+          "zoomIn": "拡大",
+          "zoomOut": "縮小",
+          "percent100": "100%",
+          "percent50": "50%",
+          "zoomFit": "画面に合わせる",
+          "mode": "エディターモード切替",
+          "selectMode": "選択モードに切替",
+          "previewMode": "プレビューモードに切替",
+          "pencilMode": "ペンツールモードに切替"
+        }
+      },
+      "operation": {
+        "selectTool": "選択ツール",
+        "preview": "ビュー移動",
+        "pencilTool": "ペンツール"
+      },
+      "rulerUnit": {
+        "toggleEnable": "ルーラー有効/無効",
+        "unit": "ルーラー単位",
+        "px": "ピクセル",
+        "cm": "センチメートル",
+        "in": "インチ",
+        "mm": "ミリメートル",
+        "pt": "ポイント",
+        "pc": "パイカ"
+      },
+      "saveOper": {
+        "preview": "プレビュー",
+        "download": "ダウンロード",
+        "saveAsPng": "PNGとして保存",
+        "contentSaveAsJSON": "コンテンツをJSONとして保存",
+        "currentPageSaveAsJSON": "現在のページをJSONとして保存",
+        "downloadOption": "ダウンロードオプション",
+        "exportType": "エクスポートファイル形式",
+        "quality": "画質",
+        "scale": "拡大縮小率",
+        "scaleExtra": "小サイズのサムネイル生成に使用できます",
+        "pixelRatio": "ピクセル比",
+        "pixelRatioExtra": "高解像度画面向けの2倍図、3倍図をエクスポートできます",
+        "pixelRatioPlaceholder": "デフォルトは1倍図",
+        "pixelRatioUnit": "倍",
+        "trim": "透明ピクセルをトリミング",
+        "yes": "はい",
+        "no": "いいえ",
+        "export": "エクスポート",
+        "currentPage": "現在のページ",
+        "all": "すべて",
+        "normal": "通常",
+        "saveAsJSON": "JSONとして保存しました",
+        "save": "保存"
+      },
+      "toolBar": {
+        "group": "グループ化",
+        "ungroup": "グループ解除"
+      },
+      "undoRedo": {
+        "undo": "元に戻す",
+        "noUndo": "元に戻す操作はありません",
+        "noRedo": "やり直す操作はありません",
+        "redo": "やり直す"
+      },
+      "zoom": {
+        "zoomIn": "拡大",
+        "zoomOut": "縮小",
+        "percent100": "100%",
+        "percent200": "200%",
+        "percent50": "50%",
+        "fitCanvas": "キャンバスに合わせる"
+      }
+    },
+    "panelLeft": {
+      "index": {
+        "downSide": "サイドバーを折りたたむ",
+        "add": "追加",
+        "template": "テンプレート",
+        "material": "素材",
+        "image": "画像",
+        "robot": "AI",
+        "text": "テキスト"
+      },
+      "text": {
+        "uploadFont": "フォントアップロード",
+        "publicFonts": "公開フォント",
+        "myFonts": "マイフォント"
+      },
+      "add": {
+        "gridlines": {
+          "direction": "方向",
+          "horizontal": "水平",
+          "vertical": "垂直",
+          "position": "位置",
+          "confirm": "確認",
+          "addButton": "グリッド線追加",
+          "addSuccess": "グリッド線追加成功"
+        },
+        "image": {
+          "label": "画像",
+          "add": "画像追加"
+        },
+        "divider": {
+          "gridLine": "ガイド線",
+          "text": "テキスト",
+          "element": "要素",
+          "shape": "図形",
+          "barcodeTool": "バーコードツール"
+        },
+        "button": {
+          "newGridLine": "ガイド線作成",
+          "addTitle": "タイトル追加",
+          "addBody": "本文追加",
+          "addParagraph": "段落追加",
+          "line": "線",
+          "arrow": "矢印",
+          "rectangle": "長方形",
+          "circle": "円",
+          "ellipse": "楕円",
+          "polygon": "多角形",
+          "star": "星形",
+          "barcode": "バーコード",
+          "qrcode": "QRコード"
+        },
+        "default": {
+          "titleText": "即時デザイン-ダブルクリックで編集",
+          "bodyText": "即時デザイン-ダブルクリックで編集",
+          "paragraphText": "即時デザイン\nダブルクリックで編集\nLorem ipsum dolor sit amet consectetur loremque laborum saepe nostrum distinctio excepturi maiores expedita id commodi blanditiis inventore ullam, error dignissimos sapiente similique repellendus sequi!"
+        }
+      },
+      "robot": {
+        "textToImage": "テキストから画像生成",
+        "outpainting": "AI拡張",
+        "prompt": "説明文",
+        "promptPlaceholder": "画像の説明文を入力してください...",
+        "referenceImage": "参考画像",
+        "referenceImageTip": "オプション、AIがスタイルを理解するための参考画像をアップロード",
+        "referenceWeight": "参考画像の重み",
+        "generate": "画像生成",
+        "generating": "生成中...",
+        "generatedImage": "生成結果",
+        "addToCanvas": "キャンバスに追加",
+        "history": "履歴",
+        "sourceImage": "元画像",
+        "sourceImageTip": "キャンバスで選択中の画像を使用",
+        "noSelectedImage": "先にキャンバスで画像を選択してください",
+        "expandDirection": "拡張方向",
+        "expandSize": "拡張ピクセル",
+        "expandLeft": "左",
+        "expandRight": "右",
+        "expandTop": "上",
+        "expandBottom": "下",
+        "expandAll": "四方",
+        "startOutpainting": "拡張開始",
+        "outpaintingResult": "拡張結果",
+        "upscaleImage": "画像拡大",
+        "upscaleFactor": "拡大倍率",
+        "upscale2x": "2x",
+        "upscale4x": "4x",
+        "startUpscale": "拡大開始",
+        "upscaleResult": "拡大結果"
+      },
+      "template": {
+        "confirmOpen": "このテンプレートを開きますか？",
+        "success": "テンプレートを開きました",
+        "fail": "テンプレートを開けませんでした"
+      }
+    },
+    "panelRight": {
+      "index": {
+        "attribute": "プロパティ",
+        "layer": "レイヤー"
+      },
+      "attribute": {
+        "some": {
+          "swipeNumber": {
+            "xLabel": "X",
+            "yLabel": "Y",
+            "rxLabel": "RX",
+            "ryLabel": "RY"
+          },
+          "transform": {
+            "horizontalFlip": "左右反転",
+            "verticalFlip": "上下反転"
+          },
+          "group": {
+            "button": "グループ化",
+            "tooltip": "グループ化"
+          },
+          "layerAttr": {
+            "title": "選択レイヤー"
+          }
+        },
+        "layer": {
+          "title": "レイヤー",
+          "blendMode": {
+            "default": "デフォルト",
+            "isolate": "分離",
+            "darken": {
+              "group": "暗色",
+              "darken": "比較（暗）",
+              "multiply": "乗算",
+              "colorBurn": "焼き込みカラー"
+            },
+            "lighten": {
+              "group": "明色",
+              "lighten": "比較（明）",
+              "screen": "スクリーン",
+              "colorDodge": "覆い焼きカラー"
+            },
+            "contrast": {
+              "group": "コントラスト",
+              "overlay": "オーバーレイ",
+              "softLight": "ソフトライト",
+              "hardLight": "ハードライト"
+            },
+            "comparison": {
+              "group": "比較",
+              "difference": "差の絶対値",
+              "exclusion": "除外"
+            },
+            "color": {
+              "group": "カラー",
+              "hue": "色相",
+              "saturation": "彩度",
+              "color": "カラー",
+              "luminosity": "輝度"
+            }
+          }
+        },
+        "alignment": {
+          "left": "左揃え",
+          "right": "右揃え",
+          "top": "上揃え",
+          "bottom": "下揃え",
+          "xcenter": "垂直方向中央揃え",
+          "ycenter": "水平方向中央揃え",
+          "xequation": "水平方向均等配置",
+          "yequation": "垂直方向均等配置"
+        },
+        "alignmentToCanvas": {
+          "title": "キャンバスに揃える",
+          "left": "左にスナップ",
+          "right": "右にスナップ",
+          "top": "上にスナップ",
+          "bottom": "下にスナップ",
+          "xcenter": "水平中央揃え",
+          "ycenter": "垂直中央揃え"
+        },
+        "arrow": {
+          "title": "矢印プロパティ",
+          "startPlaceholder": "開始矢印",
+          "endPlaceholder": "終了矢印",
+          "startPrefix": "開始矢印",
+          "endPrefix": "終了矢印",
+          "options": {
+            "none": "なし",
+            "angle": "角度矢印",
+            "angle-side": "片側角度矢印",
+            "arrow": "標準矢印",
+            "triangle": "三角形矢印",
+            "triangle-flip": "反転三角形矢印",
+            "circle": "円形矢印",
+            "circle-line": "円形矢印（線形）",
+            "square": "四角形矢印",
+            "square-line": "四角形矢印（線形）",
+            "diamond": "菱形矢印",
+            "diamond-line": "菱形矢印（線形）",
+            "mark": "注釈矢印"
+          }
+        },
+        "barcode": {
+          "panel": {
+            "contentTitle": "バーコード内容",
+            "settingsTitle": "バーコード設定"
+          },
+          "textarea": {
+            "placeholder": "内容を入力してください"
+          },
+          "format": {
+            "prefix": "エンコード形式"
+          },
+          "codeHeight": {
+            "label": "コード高さ"
+          },
+          "margin": {
+            "label": "余白"
+          },
+          "codeUnitWidth": {
+            "label": "バーコード単線間隔"
+          },
+          "fontSize": {
+            "label": "文字サイズ"
+          },
+          "textMargin": {
+            "label": "文字余白"
+          },
+          "textAlign": {
+            "prefix": "文字揃え",
+            "options": {
+              "left": "左揃え",
+              "center": "中央揃え",
+              "right": "右揃え"
+            }
+          },
+          "textPosition": {
+            "prefix": "文字位置",
+            "options": {
+              "bottom": "下部",
+              "top": "上部"
+            }
+          },
+          "lineColor": {
+            "prefix": "コード色"
+          },
+          "background": {
+            "prefix": "背景色"
+          }
+        },
+        "canvas": {
+          "overflowHidden": "キャンバス外を非表示",
+          "button": {
+            "resizeCanvas": "キャンバスサイズをコンテンツに合わせる"
+          },
+          "modal": {
+            "title": {
+              "resizeCanvas": "キャンバスサイズをコンテンツに合わせる"
+            }
+          },
+          "label": {
+            "currentPageSize": "現在のページサイズ：",
+            "modifiedSize": "変更後のサイズ："
+          },
+          "background": "背景"
+        },
+        "draw": {
+          "title": "ブラシ設定",
+          "strokeWidth": "ブラシ太さ",
+          "strokeColor": "ブラシ色"
+        },
+        "ellipse": {
+          "title": "円形プロパティ",
+          "innerRadius": "内円半径",
+          "startAngle": "開始角度",
+          "endAngle": "終了角度"
+        },
+        "fill": {
+          "title": "塗りつぶし"
+        },
+        "group": {
+          "title": "グループ内要素",
+          "tooltip": {
+            "visibility": "表示/非表示",
+            "visibilityDesc": "この要素の表示/非表示を切り替えます",
+            "mask": "マスク",
+            "maskDesc": "要素をマスクに設定すると、自身はレンダリングされず（クリップタイプを除く）、グループ内の上位要素がこのマスクの影響を受けます。",
+            "eraser": "消しゴム",
+            "eraserDesc": "要素を消しゴムに設定すると、自身はレンダリングされず、グループ内の下位要素を消去します。",
+            "note": "注意：マスク機能が有効な要素はグループの基準サイズとして使用されます。Photoshopのような多層マスクやクリッピング効果を実現するには、入れ子グループを使用してください。"
+          }
+        },
+        "ungroup": {
+          "title": "グループ解除"
+        },
+        "image": {
+          "title": "画像置換",
+          "uploadButton": "アップロード",
+          "uploadingTip": "アップロード中...",
+          "errorImageSize": "画像サイズは{size}MBを超えることはできません"
+        },
+        "layerName": {
+          "title": "レイヤー名"
+        },
+        "origin": {
+          "title": "制御点位置"
+        },
+        "line": {
+          "title": "破線",
+          "setAsDash": "破線に設定",
+          "length": "長さ",
+          "gap": "間隔"
+        },
+        "polygon": {
+          "title": "多角形プロパティ",
+          "sides": "辺数",
+          "cornerRadius": "角丸"
+        },
+        "qrCode": {
+          "content": {
+            "title": "QRコード内容",
+            "placeholder": "内容を入力してください"
+          },
+          "settings": {
+            "title": "QRコード設定",
+            "errorCorrectionLevel": {
+              "prefix": "誤り訂正レベル",
+              "options": {
+                "L": "7%",
+                "M": "15%",
+                "Q": "25%",
+                "H": "30%"
+              }
+            },
+            "margin": {
+              "label": "余白"
+            },
+            "darkColor": {
+              "prefix": "コード色"
+            },
+            "lightColor": {
+              "prefix": "コード背景色"
+            }
+          }
+        },
+        "cornerRadius": {
+          "title": "角丸",
+          "labels": {
+            "lt": "LT",
+            "rt": "RT",
+            "lb": "LB",
+            "rb": "RB"
+          }
+        },
+        "shadow": {
+          "switch": {
+            "checked": "表示",
+            "unchecked": "非表示"
+          },
+          "outer": {
+            "title": "外側シャドウ",
+            "xOffset": "Xオフセット",
+            "yOffset": "Yオフセット",
+            "blurRadius": "ぼかし半径",
+            "spread": "シャドウ距離",
+            "color": "シャドウ色",
+            "showOnlyOutside": "図形外部のシャドウのみ表示"
+          },
+          "inner": {
+            "title": "内側シャドウ",
+            "xOffset": "Xオフセット",
+            "yOffset": "Yオフセット",
+            "blurRadius": "ぼかし半径",
+            "spread": "シャドウ距離",
+            "color": "シャドウ色"
+          }
+        },
+        "star": {
+          "title": "星形プロパティ",
+          "corners": "頂点数",
+          "cornerRadius": "角丸",
+          "innerRadius": "内角"
+        },
+        "stroke": {
+          "title": "ストローク",
+          "widthLabel": "幅",
+          "joinPrefix": "角",
+          "alignPrefix": "位置",
+          "capPrefix": "端点",
+          "alignOptions": {
+            "inside": "内側",
+            "center": "中央",
+            "outside": "外側"
+          },
+          "joinOptions": {
+            "miter": "直角",
+            "bevel": "平角",
+            "round": "丸角"
+          },
+          "capOptions": {
+            "none": "なし",
+            "round": "丸形",
+            "square": "四角形"
+          }
+        },
+        "text": {
+          "content": {
+            "title": "テキスト内容",
+            "placeholder": "内容を入力してください"
+          },
+          "properties": {
+            "title": "テキストプロパティ",
+            "resizeFontSize": "テキストボックスでフォントサイズ変更",
+            "fontFamily": {
+              "prefix": "フォント",
+              "placeholder": "フォントを選択"
+            },
+            "fontWeight": {
+              "prefix": "太さ",
+              "placeholder": "太さを選択"
+            },
+            "fontSize": "サイズ",
+            "lineHeight": "行間",
+            "letterSpacing": "文字間隔",
+            "textWrap": {
+              "prefix": "折り返し",
+              "placeholder": "折り返しルールを選択",
+              "normal": "自動折り返し",
+              "none": "折り返しなし",
+              "break": "単語分割折り返し"
+            },
+            "italic": "斜体",
+            "textDecoration": {
+              "none": "なし",
+              "underline": "下線",
+              "strikethrough": "取り消し線",
+              "both": "下線+取り消し線"
+            },
+            "textAlign": {
+              "left": "左揃え",
+              "center": "中央揃え",
+              "right": "右揃え",
+              "justify": "両端揃え"
+            },
+            "verticalAlign": {
+              "top": "上揃え",
+              "middle": "垂直中央揃え",
+              "bottom": "下揃え"
+            },
+            "textOverflow": {
+              "show": "はみ出し表示",
+              "hide": "はみ出し非表示",
+              "custom": "カスタム",
+              "popoverTitle": "はみ出し表示"
+            }
+          },
+          "padding": {
+            "title": "テキスト内余白"
+          },
+          "weight": {
+            "thin": "極細",
+            "extraLight": "特細",
+            "light": "細",
+            "normal": "標準",
+            "medium": "中",
+            "semiBold": "半太",
+            "bold": "太",
+            "extraBold": "特太",
+            "black": "極太"
+          },
+          "font": {
+            "loading": "フォント読み込み中 【{fontName}】",
+            "loadSuccess": "フォント読み込み成功",
+            "loadFailed": "フォント読み込み失敗【{fontName}】 {error}"
+          }
+        },
+        "canvasLocalUpload": {
+          "uploadButton": "ローカル画像をアップロード",
+          "tooltipText1": "現在のページのローカル画像をサーバーにアップロードします。",
+          "tooltipText2": "ローカル画像：Base64エンコードおよびBlobオブジェクト。",
+          "modalTitle": "ローカル画像アップロード",
+          "startUpload": "アップロード開始",
+          "uploadedCount": "{n} 枚の画像をアップロードしました",
+          "unnamed": "名称未設定"
+        }
+      },
+      "infiniteScroll": {
+        "noMore": "これ以上ありません"
+      },
+      "material": {
+        "saveAs": {
+          "modalTitle": "素材保存オプション",
+          "saveAsMaterial": "素材として保存",
+          "form": {
+            "title": "タイトル",
+            "titleExtra": "レイヤー名に使用",
+            "recordPosition": "現在位置を記録",
+            "category": "カテゴリ",
+            "cover": "カバー",
+            "switchYes": "はい",
+            "switchNo": "いいえ"
+          }
+        }
+      },
+      "layer": {
+        "contextMenu": {
+          "createMask": "マスク作成",
+          "createClippingMask": "クリッピングマスク作成",
+          "cancelMask": "マスク解除",
+          "createEraser": "消しゴム作成",
+          "cancelEraser": "消しゴム解除",
+          "rename": "名前変更",
+          "duplicate": "複製",
+          "delete": "削除",
+          "show": "表示",
+          "hide": "非表示",
+          "lock": "ロック",
+          "unlock": "ロック解除"
+        },
+        "defaultName": "unnamed_{tag}_{id}"
+      }
+    },
+    "components": {
+      "search": {
+        "placeholder": "キーワード検索"
+      },
+      "upload": {
+        "reupload": "再アップロード",
+        "delete": "削除",
+        "error": {
+          "sizeExceed": "画像サイズは{size}MBを超えることはできません",
+          "uploadFailed": "アップロード失敗"
+        }
+      },
+      "fillPicker": {
+        "gradient": {
+          "typeLabels": {
+            "solid": "単色",
+            "linear": "線形",
+            "radial": "円形",
+            "image": "パターン"
+          }
+        },
+        "fillType": {
+          "linear": "線形グラデーション",
+          "radial": "円形グラデーション",
+          "image": "パターン塗りつぶし"
+        },
+        "panel": {
+          "degree": "角度",
+          "imageSelector": {
+            "fillMode": "塗りつぶしモード",
+            "opacity": "不透明度",
+            "options": {
+              "cover": "カバー",
+              "fit": "フィット",
+              "stretch": "ストレッチ",
+              "clip": "クリップ",
+              "repeat": "リピート"
+            }
+          }
+        }
+      }
+    }
+  }
+}
