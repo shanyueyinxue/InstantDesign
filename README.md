@@ -6,6 +6,8 @@
 
 [英文文档 English](./README.en.md)
 
+![img](./imgs/image.png)
+
 ## 简介
 
 即刻设计是一款免费开源的海报 / 图片设计工具，以 **LeaferJS** 高性能渲染引擎为核心，内建完整的多页面画布、图层、历史记录、快捷键、右键菜单、标尺辅助线、吸附等能力，并提供一套**事件总线**、**插件系统** 与 **layoutOptions 深度配置系统**，让二次开发像搭积木一样简单。
@@ -48,7 +50,7 @@ npm run preview    # 预览构建产物
 
 ## 项目结构
 
-```
+```plain
 src/
 ├── LeaferEditor/            # 设计器内核（可复用的核心库）
 │   ├── core/                # 引擎核心
@@ -162,7 +164,7 @@ editor.getService('Watermark')                          // 使用
 
 每个插件都拥有运行时状态，安装卸载过程会经历完整的状态流转：
 
-```
+```plain
 pending → installing → installed → uninstalling → uninstalled
                   ↘            ↘
                    error        error（安装 / 卸载失败）

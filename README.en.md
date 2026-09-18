@@ -6,6 +6,8 @@
 
 [中文文档 Chinese](./README.md)
 
+![img](./imgs/image.png)
+
 ## Introduction
 
 InstantDesign is a free, open-source poster / image design tool powered by the high-performance **LeaferJS** rendering engine. It ships with a complete multi-page canvas, layers, history, shortcuts, context menus, rulers and guides, snapping, and more. It also provides an **event bus**, a **plugin system**, and a deeply configurable **layoutOptions** system, making secondary development as easy as stacking building blocks.
@@ -48,7 +50,7 @@ npm run preview    # Preview the build output
 
 ## Project Structure
 
-```
+```plain
 src/
 ├── LeaferEditor/            # Designer kernel (reusable core library)
 │   ├── core/                # Engine core
@@ -162,7 +164,7 @@ editor.getService('Watermark')                               // Use
 
 Every plugin has a runtime state, and the install/uninstall process goes through a full state transition:
 
-```
+```plain
 pending → installing → installed → uninstalling → uninstalled
                   ↘            ↘
                    error        error (install / uninstall failed)
