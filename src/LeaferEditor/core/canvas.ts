@@ -3,6 +3,7 @@ import type {
     IExportOptions,
     ILeafer,
     IUI,
+    IUIInputData,
 } from "@leafer-ui/interface";
 import {
     Frame,
@@ -84,6 +85,7 @@ export class Canvas {
             blendMode: "normal",
             draggable: false,
             hittable: true,
+            editable: false,
         })
     }
 
@@ -128,6 +130,7 @@ export class Canvas {
             },
             hittable: false,
             draggable: false,
+            editable: false,
         })
     }
 
@@ -189,6 +192,25 @@ export class Canvas {
     public replaceContent(children: IUI[]): void {
         this.contentFrame.clear();
         children.forEach(child => this.add(child));
+    }
+
+    public setContentFrame(frame: Frame | IUIInputData) {
+        const data: IUIInputData = frame instanceof Frame
+            ? JSON.parse(frame.toString()) as IUIInputData
+            : frame
+
+        const name = this.contentFrame.name
+        this.width = frame.width || 0
+        this.height = frame.height || 0
+
+        this.contentFrame.set(data)
+        // 一些属性不能被修改
+        this.contentFrame.name = name
+        this.contentFrame.draggable = false
+        this.contentFrame.editable = false
+        this.contentFrame.hittable = true
+        this.contentFrame.blendMode = "normal"
+        recursiveNormalizeZIndexes(this.contentFrame.children)
     }
 
     public toJSON(): object {

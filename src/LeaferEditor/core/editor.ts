@@ -282,6 +282,24 @@ export class LeaferEditor extends PluginHost implements ILeaferEditor {
         return true
     }
 
+    public async reLoad(frame: Frame): Promise<boolean> {
+        if (!frame) return false
+        this.history.disable()
+        this.page.clearAll()
+
+        const json = JSON.parse(frame.toString())
+        await this.font.resolveMissingFonts(json)
+
+        const canvas = new Canvas(generateID(), this._width, this._height, 0, 0, this.options.canvas?.contentFill)
+        canvas.setContentFrame(json)
+        this.page.addCanvas(canvas.name, canvas)
+        this.page.setCurrent(canvas.name)
+        this.history.enable()
+        this.zoom('fit')
+        this.refreshTextFonts()
+        return true
+    }
+
     public async appendPagesFromJSON(json: object): Promise<boolean> {
         json = deepClone(json)
         this.eventBus.emit(EventTypes.loadJSONBefore, { json })

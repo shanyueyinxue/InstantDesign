@@ -193,6 +193,7 @@ export interface ILeaferEditor extends IPluginHost {
     toJSON(): object;
     exportContentJSON(): object;
     reLoadFromJSON(json: object): Promise<boolean>;
+    reLoad(frame: Frame): Promise<boolean>;
     appendPagesFromJSON(json: object): Promise<boolean>;
 
     canvasResize(width: number, height: number): void;
