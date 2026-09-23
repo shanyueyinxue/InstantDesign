@@ -110,7 +110,7 @@ interface LeaferEditorOptions {
 | `width` | `number` | `600` | Initial canvas width (also the width of newly created pages) |
 | `height` | `number` | `600` | Initial canvas height |
 | `fill` | `string` | `"#FFF"` | Viewport background color (the App's `fill`) |
-| `contentFill` | `string` | `"Transparent"` | Background color of the **content layer Frame** |
+| `contentFill` | `string` | `"transparent"` | Background color of the **content layer Frame** |
 | `lockRatio` | `boolean \| "corner"` | `false` | Whether the edit box locks the aspect ratio; `"corner"` keeps the ratio only at corners |
 | `disabledMove` | `boolean` | `false` | Whether to disable view panning (dragging the canvas) |
 | `disabledWheel` | `boolean` | `false` | Whether to disable wheel events |

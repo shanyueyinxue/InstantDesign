@@ -32,9 +32,11 @@ watchEffect(() => {
             fillArray.value = [
                 {
                     type: 'solid',
-                    color: fillcolor || "Transparent",
+                    color: fillcolor ?? "transparent",
                 }
             ]
+        } else if (typeof fillcolor === 'object' && !Array.isArray(fillcolor)) {
+            fillArray.value = [fillcolor]
         } else {
             // @ts-ignore
             fillArray.value = fillcolor

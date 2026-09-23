@@ -52,7 +52,7 @@ const onColorChange = () => {
         fillArray.value = [
             {
                 type: 'solid',
-                color: fillcolor || "Transparent",
+                color: fillcolor || "transparent",
             }
         ]
     } else {

@@ -3,7 +3,7 @@ import Panel from './panel.vue'
 import fillPicker from "../../../../components/fillPicker";
 import swipeNumber from '../../../../components/swipeNumber.vue';
 import { computed, ref, watchEffect } from 'vue';
-import { useI18n } from 'vue-i18n';  
+import { useI18n } from 'vue-i18n';
 import { useLeaferEditor } from '../../../../editorContext';
 import { selectedProxyData } from '../../../../selectedProxyData';
 import { useImageFill } from "./imageFillMixin";
@@ -22,7 +22,7 @@ const strokeWidth = selectedProxyData(editor, 'strokeWidth')
 const strokeAlign = selectedProxyData(editor, 'strokeAlign', undefined, true)
 const strokeJoin = selectedProxyData(editor, 'strokeJoin', undefined, true)
 const strokeCap = selectedProxyData(editor, 'strokeCap', undefined, true)
- 
+
 const options = computed(() => [
     { value: 'inside', label: t('leaferEditorLayouts.panelRight.attribute.stroke.alignOptions.inside') },
     { value: 'center', label: t('leaferEditorLayouts.panelRight.attribute.stroke.alignOptions.center') },
@@ -49,9 +49,11 @@ watchEffect(() => {
             strokeArray.value = [
                 {
                     type: 'solid',
-                    color: s,
+                    color: s ?? layoutTheme.defaultStrokeColor ?? '#66CCFF',
                 }
             ]
+        } else if (typeof s === 'object' && !Array.isArray(s)) {
+            strokeArray.value = [s]
         } else {
             strokeArray.value = s
         }
@@ -92,8 +94,9 @@ const onVisibleChange = (visible: boolean) => {
         <a-space direction="vertical">
             <a-row v-if="strokeArray.length > 0" :gutter="[4, 4]">
                 <a-col :span="10">
-                    <swipeNumber size="small" :min="1" :label="t('leaferEditorLayouts.panelRight.attribute.stroke.widthLabel')"
-                        v-bind="strokeWidth" :hide-button="false" />
+                    <swipeNumber size="small" :min="1"
+                        :label="t('leaferEditorLayouts.panelRight.attribute.stroke.widthLabel')" v-bind="strokeWidth"
+                        :hide-button="false" />
                 </a-col>
                 <a-col :span="12">
                     <a-select size="small" v-bind="strokeJoin" :options="strokeJoinOptions">

@@ -81,7 +81,7 @@ export class Canvas {
             y: this.y,
             width: this._width,
             height: this._height,
-            fill: contentFill || "Transparent",
+            fill: contentFill || "transparent",
             blendMode: "normal",
             draggable: false,
             hittable: true,
@@ -97,7 +97,7 @@ export class Canvas {
             y: this.y,
             width: this._width,
             height: this._height,
-            fill: "Transparent",
+            fill: "transparent",
             hittable: false,
             draggable: false,
             editable: false,
@@ -113,7 +113,6 @@ export class Canvas {
             y: this.y,
             width: this._width,
             height: this._height,
-            // fill: "Transparent",
             blendMode: "normal",
             fill: {
                 type: 'image',
@@ -315,7 +314,7 @@ export class Canvas {
     }
 
     public async exportContentAndSky(_filename: IExportFileType | string, _options?: IExportOptions | number | boolean) {
-        const tempFrame = new Frame({ x: 0, y: 0, width: this._width, height: this._height, fill: "Transparent" })
+        const tempFrame = new Frame({ x: 0, y: 0, width: this._width, height: this._height, fill: "transparent" })
         tempFrame.add(this.contentFrame.clone())
         tempFrame.add(this.skyFrame.clone())
         try {
@@ -325,7 +324,7 @@ export class Canvas {
         }
     }
     public exportSyncContentAndSky(_filename: IExportFileType | string, _options?: IExportOptions | number | boolean) {
-        const tempFrame = new Frame({ x: 0, y: 0, width: this._width, height: this._height, fill: "Transparent" })
+        const tempFrame = new Frame({ x: 0, y: 0, width: this._width, height: this._height, fill: "transparent" })
         tempFrame.add(this.contentFrame.clone())
         tempFrame.add(this.skyFrame.clone())
         try {

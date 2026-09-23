@@ -87,10 +87,10 @@ watch(() => getDefaultValue(), (data) => {
 
 const handleChange = (input: string) => {
     if (input === '') {
-        value.value = "Transparent"
+        value.value = "transparent"
         emit('change', {
             type: 'solid',
-            color: 'Transparent',
+            color: 'transparent',
         })
     } else if (input[0] === '#' && (input.length === 9 || input.length === 7 || input.length === 4)) {
         emit('change', {
@@ -100,7 +100,7 @@ const handleChange = (input: string) => {
     } else if (input.toLowerCase() === 'transparent') {
         emit('change', {
             type: 'solid',
-            color: 'Transparent',
+            color: 'transparent',
         })
     }
 }
