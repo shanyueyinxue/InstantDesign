@@ -1,9 +1,10 @@
 <template>
-    <a-button href="https://gitee.com/antianshi/instant-design" target="_blank" type="text" class="!underline underline-offset-5 p-l-5px p-r-5px">
-        <!-- <ali-icon type="icon-gitee" class="mr4px text-size-18px" /> -->
+    <a-button href="https://gitee.com/antianshi/InstantDesign" target="_blank" type="text"
+        class="!underline underline-offset-5 p-l-5px p-r-5px">
         Gitee
     </a-button>
-    <a-button href="https://gitee.com/antianshi/instant-design" target="_blank" type="text" class="!underline underline-offset-5 p-l-5px p-r-5px">
+    <a-button href="https://github.com/shanyueyinxue/InstantDesign" target="_blank" type="text"
+        class="!underline underline-offset-5 p-l-5px p-r-5px">
         GitHub
     </a-button>
     <a-button @click="onClick" type="text" class="!underline underline-offset-5 p-l-5px p-r-5px">

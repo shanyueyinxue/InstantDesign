@@ -105,7 +105,7 @@ editor.eventBus.on(editor.Events.canvasZoomChange, (scale) => {
 | Selection | `selectedBefore`, `selected`, `cancelSelected` |
 | View | `canvasZoomChange` |
 | Mode / History | `changeMode`, `undoRedoStackChange`, `historyStateSavedAfter` |
-| JSON import/export | `loadBefore / loadAfter` |
+| Load (Import) | `loadBefore / loadAfter` (fired only by `reload` / `reloadFromJSON` / `appendPagesFromJSON`) |
 | Image | `imageLocalUploadSuccess / imageLocalUploadError` |
 
 #### MittBus API
@@ -159,6 +159,8 @@ class WatermarkPlugin implements IPlugin {
 editor.use(new WatermarkPlugin(), { text: 'InstantDesign' }) // Install
 editor.getService('Watermark')                               // Use
 ```
+
+> **About the `host` in `install(host, options)`**: because `LeaferEditor` extends `PluginHost`, `editor.use(plugin, options)` internally calls `plugin.install(this, options)`, so the `host` passed in is **the editor instance itself** (`host === editor`). You can use `host` directly to access the editor API and plugin services (`host.getService(...)`, `host.registerServiceFor(...)`, etc.); `host.getInstance()` is equivalent and only returns a typed reference.
 
 #### Lifecycle State Machine
 

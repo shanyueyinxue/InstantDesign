@@ -725,12 +725,12 @@ editor.eventBus.on(editor.Events.canvasZoomChange, (scale: number) => { /* ... *
 
 | Category | Events (parameters) |
 | --- | --- |
-| Page | `pageAddBefore/After` (`{oldId,newId}`), `pageChangeBefore/After`, `pageRemoveBefore/After` (`id`) |
+| Page | `pageAddBefore/After` (`{oldId,newId}`), `pageChangeBefore/After` (`{oldId,newId}`), `pageRemoveBefore/After` (`id`) |
 | Canvas | `canvasAddBefore/After` (`{_child,_index}`), `canvasChange` (`PropertyEvent`), `canvasResize` (`{width,height}`), `canvasRemoveBefore/After` |
 | Selection | `selectedBefore`, `selected` (`IUI[]`), `cancelSelected` |
 | View | `canvasZoomChange` (`number`) |
 | Mode / History | `changeMode` (`string`), `undoRedoStackChange`, `historyStateSavedAfter` (`{state,pageId}`) |
-| JSON | `loadBefore/After` (`{json}`) |
+| Load (Import) | `loadBefore/After` (`{json}`, fired only by `reload` / `reloadFromJSON` / `appendPagesFromJSON`) |
 | Image | `imageLocalUploadSuccess` (`{url,newUrl}`), `imageLocalUploadError` (`{url,error}`) |
 
 ### API
@@ -771,11 +771,13 @@ interface IPlugin<T = any, O = any> {
 }
 ```
 
+> **The `host` in `install(host, options)` is the editor instance itself**: because `LeaferEditor` extends `PluginHost`, `editor.use(plugin, options)` internally calls `plugin.install(this, options)`, so `host === editor`. You can use `host` directly to access the editor API and plugin services (`host.getService()`, `host.registerServiceFor()`, etc.), or call `host.getInstance()` to get a typed reference — the two are equivalent.
+
 Host API:
 
 ```ts
 editor.use(plugin, options?)                 // Install
-editor.unuse(pluginName, autoCleanup?)       // Uninstall (automatically cleans up services and hooks)
+editor.unuse(pluginName, autoCleanupServices?) // Uninstall (automatically cleans up services and hooks)
 editor.getService<T>(name)                   // Get a service
 editor.hasService(name) / hasPlugin(name)
 editor.registerServiceFor(plugin, name, svc) // Register a service within a plugin

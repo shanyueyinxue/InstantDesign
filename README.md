@@ -105,7 +105,7 @@ editor.eventBus.on(editor.Events.canvasZoomChange, (scale) => {
 | 选中状态 | `selectedBefore`、`selected`、`cancelSelected` |
 | 视图 | `canvasZoomChange` |
 | 模式 / 历史 | `changeMode`、`undoRedoStackChange`、`historyStateSavedAfter` |
-| JSON 导入导出 | `loadBefore / loadAfter` |
+| 加载（导入） | `loadBefore / loadAfter`（仅在 `reload` / `reloadFromJSON` / `appendPagesFromJSON` 时触发） |
 | 图片 | `imageLocalUploadSuccess / imageLocalUploadError` |
 
 #### MittBus API
@@ -159,6 +159,8 @@ class WatermarkPlugin implements IPlugin {
 editor.use(new WatermarkPlugin(), { text: '即刻设计' }) // 安装
 editor.getService('Watermark')                          // 使用
 ```
+
+> **关于 `install(host, options)` 的 `host`**：由于 `LeaferEditor` 继承了 `PluginHost`，`editor.use(plugin, options)` 内部执行的是 `plugin.install(this, options)`，因此传入的 `host` 就是**编辑器实例本身**（`host === editor`）。你可以直接通过 `host` 访问编辑器 API 与插件服务（`host.getService(...)`、`host.registerServiceFor(...)` 等）；`host.getInstance()` 与之等价，仅用于拿到类型化引用。
 
 #### 生命周期状态机
 
