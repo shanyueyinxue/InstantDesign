@@ -169,7 +169,7 @@ const updatePagesThumbnail = () => {
     }, 300);
 }
 
-editor.eventBus.on(editor.Events.loadJSONAfter, updateDataSetTimeout)
+editor.eventBus.on(editor.Events.loadAfter, updateDataSetTimeout)
 editor.eventBus.on(editor.Events.pageAddAfter, updatePagesData)
 editor.eventBus.on(editor.Events.pageRemoveAfter, updatePagesData)
 editor.eventBus.on(editor.Events.pageChangeBefore, updateCurrentPage)
@@ -179,7 +179,7 @@ editor.eventBus.on(editor.Events.historyStateSavedAfter, updateCurrentPage)
 // editor.eventBus.on(editor.Events.canvasChange, updatePagesData)
 editor.eventBus.on(editor.Events.pageAddAfter, scrollToRight)
 editor.eventBus.on(editor.Events.pageChangeAfter, scrollCurrentPageIntoView)
-editor.eventBus.on(editor.Events.loadJSONAfter, scrollCurrentPageIntoView)
+editor.eventBus.on(editor.Events.loadAfter, scrollCurrentPageIntoView)
 editor.eventBus.on(editor.Events.undoRedoStackChange, scrollCurrentPageIntoView)
 editor.eventBus.on(editor.Events.historyStateSavedAfter, scrollCurrentPageIntoView)
 
@@ -187,7 +187,7 @@ editor.eventBus.onExternal('updatePagesThumbnail', updatePagesThumbnail)
 editor.eventBus.onExternal('updateCurrentPageThumbnail', updateCurrentPage)
 
 onUnmounted(() => {
-    editor.eventBus.off(editor.Events.loadJSONAfter, updateDataSetTimeout)
+    editor.eventBus.off(editor.Events.loadAfter, updateDataSetTimeout)
     editor.eventBus.off(editor.Events.pageAddAfter, updatePagesData)
     editor.eventBus.off(editor.Events.pageRemoveAfter, updatePagesData)
     editor.eventBus.off(editor.Events.pageChangeBefore, updateCurrentPage)
@@ -197,7 +197,7 @@ onUnmounted(() => {
     // editor.eventBus.off(editor.Events.canvasChange, updatePagesData)
     editor.eventBus.off(editor.Events.pageAddAfter, scrollToRight)
     editor.eventBus.off(editor.Events.pageChangeAfter, scrollCurrentPageIntoView)
-    editor.eventBus.off(editor.Events.loadJSONAfter, scrollCurrentPageIntoView)
+    editor.eventBus.off(editor.Events.loadAfter, scrollCurrentPageIntoView)
     editor.eventBus.off(editor.Events.undoRedoStackChange, scrollCurrentPageIntoView)
     editor.eventBus.off(editor.Events.historyStateSavedAfter, scrollCurrentPageIntoView)
 

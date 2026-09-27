@@ -242,9 +242,9 @@ export class LeaferEditor extends PluginHost implements ILeaferEditor {
             currentCanvas: this.page.currentID,
         }
     }
-    public async reLoadFromJSON(json: object): Promise<boolean> {
+    public async reloadFromJSON(json: object): Promise<boolean> {
         json = deepClone(json)
-        this.eventBus.emit(EventTypes.loadJSONBefore, { json })
+        this.eventBus.emit(EventTypes.loadBefore, { json })
         const { width, height, pages, currentCanvas } = json as any;
         if (!pages) return false
         this.history.disable()
@@ -275,25 +275,27 @@ export class LeaferEditor extends PluginHost implements ILeaferEditor {
             this.page.setCurrent(currentCanvas)
         else
             this.page.setCurrent(this.page.list()[0]!.name)
-        this.eventBus.emit(EventTypes.loadJSONAfter, { json })
+        this.eventBus.emit(EventTypes.loadAfter, { json })
         this.history.enable()
         this.zoom('fit')
         this.refreshTextFonts()
         return true
     }
 
-    public async reLoad(frame: Frame): Promise<boolean> {
+    public async reload(frame: Frame): Promise<boolean> {
         if (!frame) return false
+        const json = JSON.parse(frame.toString())
+        this.eventBus.emit(EventTypes.loadBefore, { json })
         this.history.disable()
         this.page.clearAll()
 
-        const json = JSON.parse(frame.toString())
         await this.font.resolveMissingFonts(json)
 
         const canvas = new Canvas(generateID(), this._width, this._height, 0, 0, this.options.canvas?.contentFill)
         canvas.setContentFrame(json)
         this.page.addCanvas(canvas.name, canvas)
         this.page.setCurrent(canvas.name)
+        this.eventBus.emit(EventTypes.loadAfter, { json })
         this.history.enable()
         this.zoom('fit')
         this.refreshTextFonts()
@@ -302,13 +304,12 @@ export class LeaferEditor extends PluginHost implements ILeaferEditor {
 
     public async appendPagesFromJSON(json: object): Promise<boolean> {
         json = deepClone(json)
-        this.eventBus.emit(EventTypes.loadJSONBefore, { json })
+        this.eventBus.emit(EventTypes.loadBefore, { json })
         const { pages } = json as any;
         if (!pages) return false
 
         await this.font.resolveMissingFonts(json)
 
-        // this.history.disable()
         for (let id in pages) {
             const pageData = pages[id]
             id = generateID()
@@ -317,8 +318,7 @@ export class LeaferEditor extends PluginHost implements ILeaferEditor {
             this.page.addCanvas(id, canvas)
             this.page.setCurrent(id)
         }
-        this.eventBus.emit(EventTypes.loadJSONAfter, { json })
-        // this.history.enable()
+        this.eventBus.emit(EventTypes.loadAfter, { json })
         this.zoom('fit')
         this.refreshTextFonts()
         return true

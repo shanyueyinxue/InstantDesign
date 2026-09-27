@@ -31,8 +31,8 @@ export enum EventTypes {
     undoRedoStackChange = "undoRedoStackChange",
     historyStateSavedAfter = "historyStateSavedAfter",
 
-    loadJSONBefore = "loadJSONBefore",
-    loadJSONAfter = "loadJSONAfter",
+    loadBefore = "loadBefore",
+    loadAfter = "loadAfter",
 
     imageLocalUploadSuccess = "imageLocalUploadSuccess",
     imageLocalUploadError = "imageLocalUploadError",
@@ -62,8 +62,8 @@ export type EventsParam = {
     [EventTypes.undoRedoStackChange]: currentState,
     [EventTypes.historyStateSavedAfter]: { state: currentState, pageId: string },
 
-    [EventTypes.loadJSONBefore]: { json: any },
-    [EventTypes.loadJSONAfter]: { json: any },
+    [EventTypes.loadBefore]: { json: any },
+    [EventTypes.loadAfter]: { json: any },
 
     [EventTypes.imageLocalUploadSuccess]: { url: string, newUrl: string },
     [EventTypes.imageLocalUploadError]: { url: string, error: Error },

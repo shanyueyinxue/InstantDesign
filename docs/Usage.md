@@ -274,8 +274,9 @@ Both `zoom` and setting `currentScale` fire the `canvasZoomChange` event.
 ```ts
 editor.toJSON()                      // All pages (including ground/sky)
 editor.exportContentJSON()           // Content layer only + metadata
-await editor.reLoadFromJSON(json)    // Overwrite load (clear then rebuild)
+await editor.reloadFromJSON(json)    // Overwrite load (clear then rebuild)
 await editor.appendPagesFromJSON(json) // Append pages
+// reloadFromJSON / appendPagesFromJSON / reload(frame) all emit loadBefore / loadAfter events
 
 // Export the current page
 editor.export("a.png", options?)
@@ -729,7 +730,7 @@ editor.eventBus.on(editor.Events.canvasZoomChange, (scale: number) => { /* ... *
 | Selection | `selectedBefore`, `selected` (`IUI[]`), `cancelSelected` |
 | View | `canvasZoomChange` (`number`) |
 | Mode / History | `changeMode` (`string`), `undoRedoStackChange`, `historyStateSavedAfter` (`{state,pageId}`) |
-| JSON | `loadJSONBefore/After` (`{json}`) |
+| JSON | `loadBefore/After` (`{json}`) |
 | Image | `imageLocalUploadSuccess` (`{url,newUrl}`), `imageLocalUploadError` (`{url,error}`) |
 
 ### API

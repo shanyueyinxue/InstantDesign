@@ -103,7 +103,7 @@ const handleClick = async (item: any) => {
         confirmText: t('leaferEditorLayouts.common.confirm'),
         cancelText: t('leaferEditorLayouts.common.cancel'),
         onConfirm: async () => {
-            const ok = await editor.reLoadFromJSON(item)
+            const ok = await editor.reloadFromJSON(item)
             if (ok) {
                 Message.success(t('leaferEditorLayouts.panelLeft.template.success'))
             } else {

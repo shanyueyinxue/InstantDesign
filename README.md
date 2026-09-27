@@ -105,7 +105,7 @@ editor.eventBus.on(editor.Events.canvasZoomChange, (scale) => {
 | 选中状态 | `selectedBefore`、`selected`、`cancelSelected` |
 | 视图 | `canvasZoomChange` |
 | 模式 / 历史 | `changeMode`、`undoRedoStackChange`、`historyStateSavedAfter` |
-| JSON 导入导出 | `loadJSONBefore / loadJSONAfter` |
+| JSON 导入导出 | `loadBefore / loadAfter` |
 | 图片 | `imageLocalUploadSuccess / imageLocalUploadError` |
 
 #### MittBus API

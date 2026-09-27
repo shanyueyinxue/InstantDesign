@@ -97,7 +97,7 @@ const fileOperJSON = (isAppend: boolean = false) => {
         reader.readAsText(file!, 'UTF-8');
         reader.onload = async () => {
             let ok = false;
-            if (!isAppend) ok = await editor.reLoadFromJSON(JSON.parse(<string>reader.result));
+            if (!isAppend) ok = await editor.reloadFromJSON(JSON.parse(<string>reader.result));
             else ok = await editor.appendPagesFromJSON(JSON.parse(<string>reader.result));
             if (ok) {
                 console.log(file.name + '导入成功')
@@ -141,7 +141,7 @@ const fileOperPSD = () => {
                     },
                     currentCanvas: id,
                 }
-                await editor.reLoadFromJSON(data)
+                await editor.reloadFromJSON(data)
                 await editor.image.uploadLocalImages({ sourceTag: ImageSourceTag.ImportPSD })
                 // editor.setNormalizeAttr(editor.page.current.contentFrame)
                 editor.page.current.contentLayers.forEach(child => {
