@@ -3,7 +3,7 @@ import { App, LayoutEvent, Leafer, ResizeEvent, PointerEvent, RenderEvent } from
 import { EditorEvent } from '@leafer-in/editor'
 import { Line, } from "leafer-ui";
 
-import { deepMerge } from './utils'
+import { deepMerge, getGuideDirection } from './utils'
 import { Guide, defaultConfig as guideDefaultConfig, type GuideConfig } from "./Guide";
 
 type TAxis = 'x' | 'y';
@@ -773,13 +773,19 @@ export class Ruler {
     }
   }
 
-  willDelete(point: IPointData): boolean {
-    if (!this.draggingDirection) return false
+  /**
+   * 判断辅助线释放点是否落在需要删除的位置
+   * @param point 画布坐标系下的指针位置（CSS 像素）
+   * @param direction 辅助线方向；不传时回退到当前拖拽方向（新建辅助线的场景）
+   */
+  willDelete(point: IPointData, direction?: 'horizontal' | 'vertical'): boolean {
+    const target = direction || this.draggingDirection
+    if (!target) return false
     const ruleSize = this.config.ruleSize || 20
-    const position = this.draggingDirection === 'horizontal' ? 'y' : 'x'
+    const position = target === 'horizontal' ? 'y' : 'x'
     const { width, height } = this.getSize()
     return point[position] < ruleSize || point[position] < 0 ||
-      (this.draggingDirection === 'horizontal' ? point[position] > height : point[position] > width)
+      (target === 'horizontal' ? point[position] > height : point[position] > width)
   }
 
   private renderGuideLineMarks() {
@@ -884,14 +890,16 @@ export class Ruler {
   }
 
   private onPointerUp(event: any) {
-    if (this.draggingGuideLine) {
-      const point = event.getLocalPoint()
-      if (this.willDelete(point)) {
-        this.draggingGuideLine.remove()
-        this.draggingGuideLine.destroy()
+    const line = this.draggingGuideLine
+    this.draggingGuideLine = null
+    // 拖拽结束必须复位，否则会污染后续拖动已有辅助线时的方向判定
+    this.draggingDirection = null
+    if (line && !line.destroyed) {
+      const point = event.getLocalPoint(this.app)
+      if (this.willDelete(point, getGuideDirection(line.rotation))) {
+        this.guide.removeGuideLine(line) // 统一走 Guide，同步清理 _guideLines
       }
     }
-    this.draggingGuideLine = null
     this.resetCursor()
     this.restoreBoxSelect()
   }

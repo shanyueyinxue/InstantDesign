@@ -1,7 +1,7 @@
 import { App, Leafer, PointerEvent, LeaferEvent, PropertyEvent } from '@leafer-ui/core'
 import { Line, } from "leafer-ui";
 
-import { deepMerge } from './utils'
+import { deepMerge, getGuideDirection } from './utils'
 
 import { Ruler } from "./Ruler";
 
@@ -110,10 +110,11 @@ export class Guide {
             if (e.buttons !== 1) return
             line.stroke = this.config.guideLineColor || '#1d1dff'
             const local = e.getLocalPoint(this.app)
-            if (this.ruler.willDelete(local)) {
-                this._guideLines = this._guideLines.filter(l => l.id !== line.id) // 移除已删除的线
-                line.remove()
-                line.destroy()
+            // 方向以辅助线自身为准（rotation: 0=水平, 90=垂直），不依赖 Ruler 的临时拖拽状态
+            if (this.ruler.willDelete(local, getGuideDirection(line.rotation))) {
+                this.removeGuideLine(line) // 同步清理 _guideLines，避免留下已销毁的线
+                this.ruler.forceRender() // 立即刷新标尺，移除该线的坐标标签
+                return
             }
             // 将xy取整
             line.x = Math.round(line.x || 0)

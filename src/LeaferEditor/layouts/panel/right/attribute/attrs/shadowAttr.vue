@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue';
 import type { IShadowEffect } from "@leafer-ui/interface"
-import { useI18n } from 'vue-i18n' 
+import { useI18n } from 'vue-i18n'
 
 import Panel from './panel.vue'
 import swipeNumber from '../../../../components/swipeNumber.vue';
@@ -20,19 +20,30 @@ const innerShadow = selectedProxyData(editor, 'innerShadow')
 const shadowArray = ref<IShadowEffect[]>([])
 const innerShadowArray = ref<IShadowEffect[]>([])
 watchEffect(() => {
-    if (shadow.value.modelValue) {
+    if (shadow.value.modelValue && Array.isArray(shadow.value.modelValue)) {
         shadowArray.value = <any>shadow.value.modelValue
+    } else if (shadow.value.modelValue && typeof shadow.value.modelValue === 'object' && !Array.isArray(shadow.value.modelValue)) {
+        shadowArray.value = [{
+            visible: true, // 默认可见
+            ...shadow.value.modelValue,
+        }] as any
     } else {
         shadowArray.value = []
     }
 })
 watchEffect(() => {
-    if (innerShadow.value.modelValue) {
+    if (innerShadow.value.modelValue && Array.isArray(innerShadow.value.modelValue)) {
         innerShadowArray.value = <any>innerShadow.value.modelValue
+    } else if (innerShadow.value.modelValue && typeof innerShadow.value.modelValue === 'object' && !Array.isArray(innerShadow.value.modelValue)) {
+        innerShadowArray.value = [{
+            visible: true, // 默认可见
+            ...innerShadow.value.modelValue,
+        }] as any
     } else {
         innerShadowArray.value = []
     }
 })
+
 
 const refreshShadow = () => {
     shadow.value.onChange([])
@@ -85,7 +96,7 @@ const removeInnerShadow = (index: number) => {
 
 <template>
     <div>
-        <Panel :title=" t('leaferEditorLayouts.panelRight.attribute.shadow.outer.title')" @click-add="addShadow">
+        <Panel :title="t('leaferEditorLayouts.panelRight.attribute.shadow.outer.title')" @click-add="addShadow">
             <a-space direction="vertical">
                 <a-row v-if="shadowArray.length > 0" :gutter="[4, 4]" v-for="(item, index) in shadowArray" :key="index">
                     <a-col :span="10">
@@ -93,8 +104,10 @@ const removeInnerShadow = (index: number) => {
                             refreshShadow()
                             shadow.onEnd()
                         }">
-                            <template #checked>{{  t('leaferEditorLayouts.panelRight.attribute.shadow.switch.checked') }}</template>
-                            <template #unchecked>{{  t('leaferEditorLayouts.panelRight.attribute.shadow.switch.unchecked') }}</template>
+                            <template #checked>{{ t('leaferEditorLayouts.panelRight.attribute.shadow.switch.checked')
+                                }}</template>
+                            <template #unchecked>{{
+                                t('leaferEditorLayouts.panelRight.attribute.shadow.switch.unchecked') }}</template>
                         </a-switch>
                     </a-col>
                     <a-col :span="4" class="mlauto">
@@ -108,7 +121,7 @@ const removeInnerShadow = (index: number) => {
                         <swipeNumber size="small" v-model="item.x" @change="refreshShadow" @end="shadow.onEnd"
                             style="padding: 0 6px" label-class="text-left" label-width="55px">
                             <template #label>
-                                {{  t('leaferEditorLayouts.panelRight.attribute.shadow.outer.xOffset') }}
+                                {{ t('leaferEditorLayouts.panelRight.attribute.shadow.outer.xOffset') }}
                             </template>
                         </swipeNumber>
                     </a-col>
@@ -116,7 +129,7 @@ const removeInnerShadow = (index: number) => {
                         <swipeNumber size="small" v-model="item.y" @change="refreshShadow" @end="shadow.onEnd"
                             style="padding: 0 6px" label-class="text-left" label-width="55px">
                             <template #label>
-                                {{  t('leaferEditorLayouts.panelRight.attribute.shadow.outer.yOffset') }}
+                                {{ t('leaferEditorLayouts.panelRight.attribute.shadow.outer.yOffset') }}
                             </template>
                         </swipeNumber>
                     </a-col>
@@ -124,7 +137,7 @@ const removeInnerShadow = (index: number) => {
                         <swipeNumber size="small" v-model="item.blur" @change="refreshShadow" @end="shadow.onEnd"
                             style="padding: 0 6px" :min="0" label-class="text-left" label-width="55px">
                             <template #label>
-                                {{  t('leaferEditorLayouts.panelRight.attribute.shadow.outer.blurRadius') }}
+                                {{ t('leaferEditorLayouts.panelRight.attribute.shadow.outer.blurRadius') }}
                             </template>
                         </swipeNumber>
                     </a-col>
@@ -132,16 +145,18 @@ const removeInnerShadow = (index: number) => {
                         <swipeNumber size="small" v-model="item.spread" @change="refreshShadow" @end="shadow.onEnd"
                             style="padding: 0 6px" label-class="text-left" label-width="55px">
                             <template #label>
-                                {{  t('leaferEditorLayouts.panelRight.attribute.shadow.outer.spread') }}
+                                {{ t('leaferEditorLayouts.panelRight.attribute.shadow.outer.spread') }}
                             </template>
                         </swipeNumber>
                     </a-col>
                     <a-col :span="20">
-                        <a-color-picker :model-value="item.color as string" @update:model-value="(v: string) => item.color = v" size="mini" :position="'bottom'"
+                        <a-color-picker :model-value="item.color as string"
+                            @update:model-value="(v: string) => item.color = v" size="mini" :position="'bottom'"
                             @mousedown="(e: MouseEvent) => e.preventDefault()" @change="refreshShadow">
-                            <a-input size="mini" :model-value="item.color as string" @update:model-value="(v: string) => item.color = v" @blur="shadow.onEnd">
+                            <a-input size="mini" :model-value="item.color as string"
+                                @update:model-value="(v: string) => item.color = v" @blur="shadow.onEnd">
                                 <template #prefix>
-                                    {{  t('leaferEditorLayouts.panelRight.attribute.shadow.outer.color') }}
+                                    {{ t('leaferEditorLayouts.panelRight.attribute.shadow.outer.color') }}
                                     <div class="w18px h18px ml5px" :style="{ backgroundColor: item.color as string }">
                                     </div>
                                 </template>
@@ -149,13 +164,13 @@ const removeInnerShadow = (index: number) => {
                         </a-color-picker>
                     </a-col>
                     <a-col :span="20">
-                        <a-checkbox v-model="item.box"
-                            @change="refreshShadow">{{  t('leaferEditorLayouts.panelRight.attribute.shadow.outer.showOnlyOutside') }}</a-checkbox>
+                        <a-checkbox v-model="item.box" @change="refreshShadow">{{
+                            t('leaferEditorLayouts.panelRight.attribute.shadow.outer.showOnlyOutside') }}</a-checkbox>
                     </a-col>
                 </a-row>
             </a-space>
         </Panel>
-        <Panel :title=" t('leaferEditorLayouts.panelRight.attribute.shadow.inner.title')" @click-add="addInnerShadow">
+        <Panel :title="t('leaferEditorLayouts.panelRight.attribute.shadow.inner.title')" @click-add="addInnerShadow">
             <a-space direction="vertical">
                 <a-row v-if="innerShadowArray.length > 0" :gutter="[4, 4]" v-for="(item, index) in innerShadowArray"
                     :key="index">
@@ -164,8 +179,10 @@ const removeInnerShadow = (index: number) => {
                             refreshInnerShadow()
                             innerShadow.onEnd()
                         }">
-                            <template #checked>{{  t('leaferEditorLayouts.panelRight.attribute.shadow.switch.checked') }}</template>
-                            <template #unchecked>{{  t('leaferEditorLayouts.panelRight.attribute.shadow.switch.unchecked') }}</template>
+                            <template #checked>{{ t('leaferEditorLayouts.panelRight.attribute.shadow.switch.checked')
+                                }}</template>
+                            <template #unchecked>{{
+                                t('leaferEditorLayouts.panelRight.attribute.shadow.switch.unchecked') }}</template>
                         </a-switch>
                     </a-col>
                     <a-col :span="4" class="mlauto">
@@ -179,7 +196,7 @@ const removeInnerShadow = (index: number) => {
                         <swipeNumber size="small" v-model="item.x" @end="innerShadow.onEnd" @change="refreshInnerShadow"
                             style="padding: 0 6px" label-class="text-left" label-width="55px">
                             <template #label>
-                                {{  t('leaferEditorLayouts.panelRight.attribute.shadow.inner.xOffset') }}
+                                {{ t('leaferEditorLayouts.panelRight.attribute.shadow.inner.xOffset') }}
                             </template>
                         </swipeNumber>
                     </a-col>
@@ -187,7 +204,7 @@ const removeInnerShadow = (index: number) => {
                         <swipeNumber size="small" v-model="item.y" @end="innerShadow.onEnd" @change="refreshInnerShadow"
                             style="padding: 0 6px" label-class="text-left" label-width="55px">
                             <template #label>
-                                {{  t('leaferEditorLayouts.panelRight.attribute.shadow.inner.yOffset') }}
+                                {{ t('leaferEditorLayouts.panelRight.attribute.shadow.inner.yOffset') }}
                             </template>
                         </swipeNumber>
                     </a-col>
@@ -196,7 +213,7 @@ const removeInnerShadow = (index: number) => {
                             @change="refreshInnerShadow" :min="0" style="padding: 0 6px" label-class="text-left"
                             label-width="55px">
                             <template #label>
-                                {{  t('leaferEditorLayouts.panelRight.attribute.shadow.inner.blurRadius') }}
+                                {{ t('leaferEditorLayouts.panelRight.attribute.shadow.inner.blurRadius') }}
                             </template>
                         </swipeNumber>
                     </a-col>
@@ -205,16 +222,18 @@ const removeInnerShadow = (index: number) => {
                             @change="refreshInnerShadow" style="padding: 0 6px" label-class="text-left"
                             label-width="55px">
                             <template #label>
-                                {{  t('leaferEditorLayouts.panelRight.attribute.shadow.inner.spread') }}
+                                {{ t('leaferEditorLayouts.panelRight.attribute.shadow.inner.spread') }}
                             </template>
                         </swipeNumber>
                     </a-col>
                     <a-col :span="20">
-                        <a-color-picker :model-value="item.color as string" @update:model-value="(v: string) => item.color = v" size="mini" :position="'bottom'"
+                        <a-color-picker :model-value="item.color as string"
+                            @update:model-value="(v: string) => item.color = v" size="mini" :position="'bottom'"
                             @mousedown="(e: MouseEvent) => e.preventDefault()" @change="refreshInnerShadow">
-                            <a-input size="mini" :model-value="item.color as string" @update:model-value="(v: string) => item.color = v" @blur="innerShadow.onEnd">
+                            <a-input size="mini" :model-value="item.color as string"
+                                @update:model-value="(v: string) => item.color = v" @blur="innerShadow.onEnd">
                                 <template #prefix>
-                                    {{  t('leaferEditorLayouts.panelRight.attribute.shadow.inner.color') }}
+                                    {{ t('leaferEditorLayouts.panelRight.attribute.shadow.inner.color') }}
                                     <div class="w18px h18px ml5px" :style="{ backgroundColor: item.color as string }">
                                     </div>
                                 </template>
